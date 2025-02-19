@@ -1,0 +1,34 @@
+p { 
+    color:black;
+    font-size: 20px;
+    font-weight: 300;
+}
+h1 {
+    color: orange;
+    font-family: "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+/* not being used currently */
+/* chain selectors */
+.red.blue {   
+    color: green;
+}
+/* grouping sele */
+.red,.blue {
+    color: rgb(255, 0, 111);
+}
+#unique1 {
+    color: brown;
+}
+.class1 {
+    background-color: yellow;
+    font-size: 50px;
+}
+/* descendant combinator */
+ul li {
+    color: burlywood;
+}

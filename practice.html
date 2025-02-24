@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* universal */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body level */
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* form in body */
+        form {
+            width: 80%;
+            max-width: 600px;
+
+            padding: 20px;
+            border: 1px dotted white;
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+
+             
+            
+        }
+        /* class name and class email in form */
+        /* grouping: css that name and email share */
+        .name, .email {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            min-width: 160px;
+        }
+        /* class email uniquely have */
+        .email {
+            flex-grow: 2;
+        }
+
+
+        /* type selector */
+        label {
+            padding-bottom: 5px;
+            color: white;
+            font-size: 14px;
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid white;
+            background-color: transparent;
+            color: white;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+
+        <div class="name">
+            <label for="name">Name:</label>
+            <input name="name" type="text" value="Can Jiang" id="name">
+        </div>
+
+        <div class="email">
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="text" value="Candicejiang1@gmail.com">
+        </div>
+    </form>
+</body>
+</html>
+
+
